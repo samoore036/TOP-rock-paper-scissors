@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; /* allows footer to go to the bottom */
+}
+
+#title-bar {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: white;
+    font-size: 26px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+#game-log, #selection-div, #score-board {
+    border: 5px;
+    border-style: solid;
+    width: 600px;
+    height: 500px;
+}
+
+#game-log {
+    overflow: auto;
+}
+
+#results-list {
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+li {
+    margin: 5px;
+    font-size: 22px;
+}
+
+#selection-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 18px;
+}
+
+#icon-selections {
+    display: flex;
+    gap: 30px;
+}
+
+.select-button:hover, #btn-play, #btn-reset {
+    cursor: pointer;
+}
+
+#btn-play, #btn-reset  {
+    font-size: 24px;
+    padding: 5px 32px;
+}
+
+#score-board {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    align-items: center;
+    height: 50px;
+    gap: 10px;
+}
+
+#logo-box {
+    margin-top: 6px;
+}
+
+li {
+    list-style: none;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+#gameover-div {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    left: 41%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#overlay.active, #gameover-div.active {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -9,19 +9,57 @@
 
 
 <body>
-<div id="selection-div">
-    <button id="btn-rock" class="btn">Rock</button>
-    <button id="btn-paper" class="btn">Paper</button>
-    <button id="btn-scissors" class="btn">Scissors</button>
-    <button id="btn-play" class="btn">Play</button>
+<div id="title-bar">
+    <div id="title-header">
+        <h3>Rock Paper Scissors</3>
+    </div>
+        <div id="logo-box">
+            
+        </div>
 </div>
 
-<div id="rounds">
-    <ol id="results-list">
-    </ol>
-    <div id="results">
+<div id="game-container">
+    <div id="game-log">
+        <ol id="results-list">
+        </ol>
+        <div id="results">
+        </div>
+    </div>
+
+    <div id="selection-div">
+        <h3 id="selection-header">First to 5 wins</h3>
+        <div id="icon-selections">
+            <img src="images/rock.webp" id="rock-img" class ="select-button" height="120px" width="90px">
+            <img src="images/paper.webp" id="paper-img" class="select-button" height="120px" width="100px"></button>
+            <img src="images/scissors.webp" id="scissors-img" class="select-button" height="120px" width="105px"></button>
+        </div>
+        <button id="btn-play" class="btn">Play</button>
+    </div>
+
+    <div id="score-board">
+        <div id="score-box">
+            <p id="player-score">Player: 0</p>
+            <p id="computer-score">Computer: 0</p>
+        </div>
     </div>
 </div>
+
+<div id="footer">
+    <p>Webpage by: Shaheen Moore</p>
+    <div id="logo-box">
+        <a href="https://github.com/samoore036"><a href="https://github.com/samoore036"><img src="images/git-logo.webp" width="20px" height="20px"></a>
+    </div>
+</div>
+
+<div id="gameover-div">
+    <p id="gameover-msg"></p>
+    <button id="btn-reset">Play again</button>
+</div>
+
+<div id="overlay">
+    
+</div>
+
 
 </body>
 </html>
